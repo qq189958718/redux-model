@@ -21,3 +21,9 @@ export interface HttpServiceConfig extends BaseHttpServiceConfig {
   isSuccess?: (action: HttpResponse) => boolean;
   transformSuccessData?: (data: any, headers: any) => any;
 }
+
+export interface Ref<T> {
+  value: T;
+}
+
+export type UseSelector<TState, TSelected> = (selector: (state: TState) => TSelected) => Ref<TSelected>;

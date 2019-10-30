@@ -1,12 +1,12 @@
-import Vue from 'vue';
 import cloneDeep from 'lodash.clonedeep';
 import { applyPatch } from './diff';
+import { observable } from './hooks';
 import { onStoreCreated } from '../core/utils/createReduxStore';
 
 onStoreCreated((store) => {
   const getCurrentState = store.getState as () => object;
   let originalState = getCurrentState();
-  const observer = Vue.observable(cloneDeep(originalState));
+  const observer = observable(cloneDeep(originalState));
 
   store.getState = () => {
     return observer;

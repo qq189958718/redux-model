@@ -480,6 +480,13 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@vue/composition-api@^0.3.2":
+  version "0.3.2"
+  resolved "https://registry.npmjs.org/@vue/composition-api/-/composition-api-0.3.2.tgz#2d797028e489bf7812f08c7bb33ffd03ef23c617"
+  integrity sha512-fD4dn9cJX62QSP2TMFLXCOQOa+Bu2o7kWDjrU/FNLkNqPPcCKBLxCH/Lc+gNCRBKdEUGyI3arjAw7j0Yz1hnvw==
+  dependencies:
+    tslib "^1.9.3"
+
 abab@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npmjs.org/abab/-/abab-2.0.2.tgz#a2fba1b122c69a85caa02d10f9270c7219709a9d"
@@ -5334,7 +5341,7 @@ ts-jest@^24.1.0:
     semver "^5.5"
     yargs-parser "10.x"
 
-tslib@^1.10.0:
+tslib@^1.10.0, tslib@^1.9.3:
   version "1.10.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
@@ -5495,11 +5502,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-vue-hooks@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/vue-hooks/-/vue-hooks-0.3.2.tgz#60feb7401811758fdf0aa63dc8da1771dc8ded5c"
-  integrity sha512-yLNLPdEjtSNbGCICajRRJ6JcYNbQK3jvfr8PPpB4Tg0+9hBNaRk50+ZYNtlAy7xXBGLHbR8/h2Gjao5SZYZW4w==
 
 vue@*, vue@^2.6.10:
   version "2.6.10"

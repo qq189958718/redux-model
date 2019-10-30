@@ -1,13 +1,21 @@
 import { BaseModel } from '../core/BaseModel';
-import { useComputed } from 'vue-hooks';
-import { HttpServiceWithMeta, UseSelector } from '../core/utils/types';
+import { HttpServiceWithMeta } from '../core/utils/types';
 import { METHOD } from '../core/utils/method';
 import { getStore } from '../core/utils/createReduxStore';
+import { Ref, UseSelector } from './types';
+import { computed } from './hooks';
 
 export abstract class Model<Data = null> extends BaseModel<Data> {
+  // @ts-ignore
+  public useData<T = Data>(filter?: (data: Data) => T): Ref<T> {
+    // @ts-ignore
+    return super.useData(filter);
+  }
+
+  // @ts-ignore
   protected switchReduxSelector<TState = any, TSelected = any>(): UseSelector<TState, TSelected> {
-    return (selector: (state: TState) => TSelected): TSelected => {
-      return useComputed(() => selector(getStore().getState()));
+    return (selector: (state: TState) => TSelected): Ref<TSelected> => {
+      return computed(() => selector(getStore().getState()));
     };
   }
 

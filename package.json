@@ -34,6 +34,7 @@
     "@types/react-redux": "^7.1.4",
     "@types/vue": "^2.0.0",
     "@types/webpack-env": "^1.14.1",
+    "@vue/composition-api": "^0.3.2",
     "babel-types": "^6.26.0",
     "coveralls": "^3.0.7",
     "docsify-cli": "^4.3.0",
@@ -48,7 +49,6 @@
     "redux-persist-node-storage": "^2.0.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4",
-    "vue": "^2.6.10",
-    "vue-hooks": "^0.3.2"
+    "vue": "^2.6.10"
   }
 }
