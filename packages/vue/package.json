@@ -1,6 +1,6 @@
 {
   "name": "@redux-model/vue",
-  "version": "6.9.2",
+  "version": "7.0.0-alpha.0",
   "keywords": [
     "vue",
     "redux-model",
