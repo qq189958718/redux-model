@@ -40,7 +40,8 @@
     "@types/deep-diff": "^1.0.0",
     "@types/vue": "^2.0.0",
     "public-refactor": "^0.5.1",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "typescript": "^3.9.6"
   },
   "publishConfig": {
     "access": "public",
