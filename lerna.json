@@ -4,7 +4,7 @@
     "packages/taro",
     "packages/vue"
   ],
-  "version": "7.0.0-alpha.4",
+  "version": "7.0.0-alpha.5",
   "npmClient": "yarn",
   "command": {
     "version": {
