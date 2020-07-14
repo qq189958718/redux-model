@@ -4,10 +4,7 @@
   "author": "范文华 <531362022@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "lerna run build",
-    "test": "lerna run test",
-    "clean": "rm -rf packages/*/build",
-    "od": "sh ./scripts/outdated.sh"
+    "next": "lerna publish --dist-tag=next"
   },
   "dependencies": {
     "clone": "2.1.2",

@@ -17,9 +17,11 @@
   "scripts": {
     "build": "sh ../../scripts/build.sh",
     "prepublishOnly": "yarn run build",
-    "prebuild": "sh ../../scripts/link.sh",
-    "preinstall": "sh ../../scripts/link.sh",
-    "focuslink": "rm -rf src/core && ln -s $(dirname $PWD)/core src/core"
+    "prebuild": "yarn link:core",
+    "link": "sh ../../scripts/link.sh",
+    "forcelink": "rm -rf src/core && ln -s $(dirname $PWD)/core src/core",
+    "clean": "rm -rf ./build",
+    "outdated": "yarn outdated"
   },
   "peerDependencies": {
     "@tarojs/taro": "^3.0.0",
