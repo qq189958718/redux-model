@@ -1,0 +1,19 @@
+{
+  "packages": [
+    "packages/react",
+    "packages/taro",
+    "packages/vue"
+  ],
+  "version": "6.9.2",
+  "npmClient": "yarn",
+  "command": {
+    "version": {
+      "message": "chore: Bump version %s"
+    }
+  },
+  "ignoreChanges": [
+    "**/tests/**",
+    "**/.gitignore",
+    "**/*.md"
+  ]
+}
